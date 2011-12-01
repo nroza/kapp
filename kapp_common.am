@@ -1,0 +1,5 @@
+# $(top_srcdir)/common.am
+
+# common automake definitions
+
+AM_CXXFLAGS = -std=gnu++0x -g -pipe -fPIC -trigraphs -Werror -Wall -Wextra -Weffc++ -Wconversion -Wno-system-headers  -D FUSION_MAX_VECTOR_SIZE=20 -D BOOST_SPIRIT_USE_PHOENIX_V3 -isystem /usr/local/include -I$(top_srcdir)
