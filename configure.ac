@@ -17,8 +17,13 @@ AC_PROG_CXX
 AC_PROG_INSTALL
 AM_PROG_CC_C_O
 
-# Checks for libraries.
-dnl AC_CHECK_LIB([boost_system])
+# Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_STDBOOL
+dnl AC_C_INLINE
+AC_TYPE_SIZE_T
+
+# Checks for library functions.
+AC_FUNC_ERROR_AT_LINE
 
 # Checks for header files.
 AC_CHECK_HEADERS([string iomanip iostream])
@@ -29,17 +34,12 @@ AC_CHECK_HEADERS([boost/lexical_cast.hpp])
 AC_CHECK_HEADERS([boost/preprocessor.hpp])
 AC_CHECK_HEADERS([boost/date_time.hpp])
 
-
-# Checks for typedefs, structures, and compiler characteristics.
-AC_HEADER_STDBOOL
-dnl AC_C_INLINE
-AC_TYPE_SIZE_T
-
-# Checks for library functions.
-AC_FUNC_ERROR_AT_LINE
+# Checks for libraries.
+dnl AC_CHECK_LIB([boost_system])
 
 AC_CONFIG_FILES([Makefile
                  jupiter/Makefile
                  cutil/Makefile])
 
 AC_OUTPUT
+

@@ -4,7 +4,8 @@ check_PROGRAMS = fib jup
 bin_PROGRAMS = gcd
 
 fib_SOURCES = fib.cpp
-gcd_SOURCES = gcd.cpp
+gcd_SOURCES = gcd.cpp gcd.hpp
+
 jup_SOURCES = jup.cpp
 jup_CPPFLAGS = -I$(top_srcdir)/include
 jup_LDADD = ../jupiter/libjupiter.la
