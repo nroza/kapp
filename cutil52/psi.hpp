@@ -1,24 +1,5 @@
-/** \file psi.hpp
- *	\brief
- *		Standard PSI definitions, to be used across all C++ projects
- *
- *	\author	Krzysztof Kamieniecki, <krys@passportsystems.com>, Passport Systems Inc.
- *
- *	\date	2007-10-31
- *
- *	Copyright 2007 - 2007, Passport Systems, Inc.
- *
- */
+/* cutil/psi.hpp */
 
-//-----------------------------------------------------------------------------
-//                       Revision History
-//                       ----------------
-// Date        Name            Comment
-//-----------------------------------------------------------------------------
-// 2007-10-31  KKamieniecki    Created
-// 2009-01-17  RMatracki	   Updated with VXWORKS defines
-// 2009-03-13  mryan		   Added #elif for linux defintions as well as vxworks (both use gcc)
-//-----------------------------------------------------------------------------
 
 #ifndef PSI_HPP_
 #define PSI_HPP_
